@@ -10,18 +10,18 @@ else
     CPP    = g++
 endif
 
-all:	 ecpiww 
+all:	 eccwmbus
 
 		
-ecpiww: 		ecpiww.o wmbus.o 
-				$(CC) -o ecpiww ecpiww.o wmbus.o -lpthread -ldl
+eccwmbus: 		eccwmbus.o wmbus.o 
+				$(CC) -o eccwmbus eccwmbus.o wmbus.o -lpthread -ldl
 				
-ecpiww.o:		../src/energycam/ecpiww.c ../include/energycam/ecpiww.h 
-				$(CC) $(INC) -c ../src/energycam/ecpiww.c
+eccwmbus.o:		../src/wmbus/eccwmbus.c ../include/wmbus/eccwmbus.h 
+				$(CC) $(INC) -c ../src/wmbus/eccwmbus.c
 							
-wmbus.o:		../src/energycam/wmbus.c
-				$(CC) $(INC) -pthread -c ../src/energycam/wmbus.c
+wmbus.o:		../src/wmbus/wmbus.c
+				$(CC) $(INC) -pthread -c ../src/wmbus/wmbus.c
 
 clean: 			
-				@rm -f ecpiww ecpiww.o wmbus.o
+				@rm -f eccwmbus eccwmbus.o wmbus.o
 				@echo Clean done

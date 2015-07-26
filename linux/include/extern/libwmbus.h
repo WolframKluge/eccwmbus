@@ -19,6 +19,7 @@
 #define BUFFER_SIZE 1024
 
 #define LIB_WMBUSHCI "./libwmbus.so"
+//#define LIB_WMBUSHCI "./libwmbushci.so"
 
 typedef unsigned char UINT8;
 typedef unsigned int UINT32;
