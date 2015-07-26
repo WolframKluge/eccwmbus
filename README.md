@@ -9,7 +9,7 @@ Goal:
 The goal should be to find sending wMBus devices grab the sent payload (hopefully decoded) and
 in the 
     1st version send them to a csv file
-in the 
+and in the 
     2nd version to push the paramters to emonhub for use in emoncms (www.openenergymonitor.org)
 
 Tested Devices:
