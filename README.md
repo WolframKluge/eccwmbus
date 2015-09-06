@@ -10,7 +10,7 @@ The goal should be to find sending wMBus devices grab the sent payload (hopefull
 in the 
     1st version send them to a csv file
 and in the 
-    2nd version to push the paramters to emonhub for use in emoncms (www.openenergymonitor.org)
+    2nd version to push the parameters to emonhub for use in emoncms (www.openenergymonitor.org)
 
 Tested Devices:
 
